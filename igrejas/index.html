@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consórcio para Igrejas e Pastores | Alex Martins</title>
+  <meta name="description" content="Planejamento patrimonial sem juros para expansão de igrejas, construção de sede própria e previdência/jubilação pastoral." />
+  
+  <link rel="icon" type="image/png" href="../logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'] },
+          colors: {
+            brand: { gold: '#C5A059', goldHover: '#B38E46', navy: '#041628', slateTitle: '#0F172A', muted: '#64748B', border: '#E2E8F0', bgLight: '#F3F6F8' }
+          },
+          boxShadow: { soft: '0 4px 20px -2px rgba(0, 0, 0, 0.05)', card: '0 8px 30px -4px rgba(0, 0, 0, 0.1)' }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>details summary::-webkit-details-marker { display:none; }</style>
+</head>
+<body class="bg-white text-slate-800 font-sans antialiased selection:bg-brand-gold selection:text-white">
+
+  <!-- NAVBAR -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 md:h-20 flex items-center justify-between">
+      <a href="../index.html" class="flex items-center gap-3">
+        <img src="../logo.png" alt="Logotipo Alex Martins" class="h-8 md:h-10 w-auto object-contain" />
+        <div class="flex flex-col">
+          <span class="font-extrabold text-base md:text-lg tracking-tight text-brand-slateTitle leading-none">Alex Martins</span>
+          <span class="text-[10px] md:text-[11px] text-brand-gold uppercase tracking-widest font-bold mt-1">Entender. Planejar. Conquistar.</span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
+        <a href="#projetos" class="hover:text-brand-gold transition-colors">Objetivos</a>
+        <a href="#por-que-consorcio" class="hover:text-brand-gold transition-colors">Por que Consórcio</a>
+        <a href="#metodo" class="hover:text-brand-gold transition-colors">Como funciona</a>
+        <a href="#faq" class="hover:text-brand-gold transition-colors">FAQ</a>
+        <a href="../index.html" class="text-brand-gold hover:text-brand-goldHover transition-colors border-l border-slate-200 pl-8">Site principal &rarr;</a>
+      </nav>
+
+      <div>
+        <a href="#contato" class="inline-flex items-center justify-center px-4 py-2 md:px-5 md:py-2.5 rounded-xl text-xs md:text-sm font-bold text-brand-slateTitle border border-slate-300 hover:border-brand-gold hover:text-brand-gold transition-all">
+          Analisar projeto
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="hero" class="relative isolate scroll-mt-24 overflow-hidden bg-brand-navy min-h-[78vh] md:min-h-[85vh] flex flex-col justify-center pt-28 pb-12 md:pt-32 md:pb-20">
+    <img src="./hero-igrejas.webp" alt="Culto em igreja contemporânea" class="absolute inset-0 -z-10 h-full w-full object-cover object-[70%_center]" />
+    
+    <div aria-hidden="true" class="absolute inset-0 -z-10 bg-gradient-to-b from-[#041628]/90 via-[#041628]/75 to-[#041628]/85 md:bg-gradient-to-r md:from-[#041628] md:via-[#041628]/85 md:to-[#041628]/25"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div class="max-w-2xl">
+        <p class="text-xs font-bold uppercase tracking-[0.18em] text-brand-gold">
+          Planejamento para igrejas e pastores
+        </p>
+
+        <h1 class="mt-4 text-[2.125rem] font-extrabold leading-[1.1] text-white md:text-[3rem] lg:text-[3.25rem]">
+          Sua igreja tem projetos.<br />
+          Sua família também <span class="text-brand-gold">tem um futuro.</span>
+        </h1>
+
+        <p class="mt-5 max-w-xl text-base leading-[1.7] text-white/85 md:text-lg font-medium">
+          O consórcio pode ajudar sua igreja a crescer, realizar projetos e construir patrimônio sem juros de financiamento. E também pode ajudar você a planejar o futuro da sua família.
+        </p>
+
+        <div class="mt-8">
+          <a href="#contato" onclick="selecionarProjeto('igreja')" class="inline-flex w-full sm:w-auto items-center justify-center rounded-xl bg-brand-gold px-8 py-3.5 text-brand-navy font-extrabold transition-transform duration-200 hover:-translate-y-0.5 hover:bg-brand-gold/90 shadow-soft">
+            Conte-me sobre o seu projeto
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DORES -->
+  <section id="dores" class="scroll-mt-24 bg-brand-bgLight py-12 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl text-center">
+        <p class="text-xs font-bold uppercase tracking-[0.15em] text-brand-gold">Pare e pense</p>
+        <h2 class="mt-4 text-[1.5rem] font-extrabold leading-[1.22] text-brand-slateTitle md:text-[2.25rem] md:leading-[1.15]">
+          Enquanto a igreja avança, quais projetos continuam esperando?
+        </h2>
+      </div>
+
+      <div class="mt-10 md:mt-14 max-w-5xl mx-auto">
+        <div class="grid gap-0 md:grid-cols-2 md:gap-x-10 md:gap-y-2">
+          <div class="h-full py-6 md:py-8">
+            <span class="grid h-10 w-10 place-items-center rounded-xl bg-slate-200/50">
+              <i data-lucide="building-2" class="h-5 w-5 fill-brand-gold/20 text-brand-gold"></i>
+            </span>
+            <h3 class="mt-4 text-lg font-extrabold leading-[1.3] text-brand-slateTitle md:text-xl">
+              A igreja cresceu. Mas a estrutura já não acompanha.
+            </h3>
+            <p class="mt-2 text-base font-medium leading-[1.55] text-brand-muted">Falta espaço, uma reforma precisa acontecer ou a sede própria permanece como plano.</p>
+          </div>
+          <div class="h-full py-6 md:py-8 border-t border-slate-300/60 md:border-t-0">
+            <span class="grid h-10 w-10 place-items-center rounded-xl bg-slate-200/50">
+              <i data-lucide="calendar-clock" class="h-5 w-5 fill-brand-gold/20 text-brand-gold"></i>
+            </span>
+            <h3 class="mt-4 text-lg font-extrabold leading-[1.3] text-brand-slateTitle md:text-xl">
+              Cada novo projeto parece exigir começar tudo de novo.
+            </h3>
+            <p class="mt-2 text-base font-medium leading-[1.55] text-brand-muted">Uma construção ou projeto importante pode ficar anos esperando dinheiro disponível.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- O PRÓXIMO PASSO -->
+  <section id="projetos" class="scroll-mt-24 bg-white py-12 md:py-20 border-y border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl text-center">
+        <p class="text-xs font-bold uppercase tracking-[0.15em] text-brand-gold">O próximo passo</p>
+        <h2 class="mt-4 text-3xl font-extrabold text-brand-slateTitle md:text-[2.5rem] md:leading-[1.15]">
+          O que você quer tornar possível?
+        </h2>
+      </div>
+
+      <div class="mt-10 grid gap-8 md:mt-12 md:grid-cols-3 md:gap-10 max-w-6xl mx-auto">
+        <div class="h-full border-t-2 border-brand-gold pt-6">
+          <i data-lucide="church" class="h-7 w-7 text-brand-gold"></i>
+          <h3 class="mt-4 text-xl font-extrabold text-brand-slateTitle">Para sua igreja</h3>
+          <ul class="mt-4 space-y-2.5">
+            <li class="flex items-start gap-3 text-brand-slateTitle"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-gold"></span><span class="text-base leading-[1.6] font-medium">Sair do aluguel ou Construir</span></li>
+            <li class="flex items-start gap-3 text-brand-slateTitle"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-gold"></span><span class="text-base leading-[1.6] font-medium">Adquirir veículos ou vans</span></li>
+          </ul>
+        </div>
+        <div class="h-full border-t-2 border-brand-gold pt-6">
+          <i data-lucide="home" class="h-7 w-7 text-brand-gold"></i>
+          <h3 class="mt-4 text-xl font-extrabold text-brand-slateTitle">Para você, pastor</h3>
+          <ul class="mt-4 space-y-2.5">
+            <li class="flex items-start gap-3 text-brand-slateTitle"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-gold"></span><span class="text-base leading-[1.6] font-medium">Construir patrimônio pessoal</span></li>
+            <li class="flex items-start gap-3 text-brand-slateTitle"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-gold"></span><span class="text-base leading-[1.6] font-medium">Planejar jubilação</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL (FormSubmit Integrado) -->
+  <section id="contato" class="scroll-mt-24 bg-white pb-14 pt-12 md:py-20 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="relative overflow-hidden rounded-[2rem] bg-brand-navy px-5 py-10 md:px-12 md:py-14 shadow-2xl">
+        
+        <div aria-hidden="true" class="pointer-events-none absolute -top-24 left-1/2 h-64 w-64 -translate-x-1/2 rounded-full bg-brand-gold/10 blur-3xl"></div>
+        
+        <div class="relative grid gap-8 lg:grid-cols-[42fr_58fr] lg:items-start lg:gap-12">
+          <div>
+            <h2 class="text-3xl font-extrabold text-white md:text-[2.25rem] md:leading-[1.15]">
+              Conte-me sobre o seu projeto
+            </h2>
+            <p class="mt-4 leading-[1.7] text-white/70">
+              Preencha algumas informações sobre o que você deseja realizar. Vou analisar seu cenário e entrar em contato para combinarmos os próximos passos.
+            </p>
+          </div>
+
+          <div class="rounded-2xl bg-white p-5 md:p-7 shadow-xl border border-slate-100">
+            <!-- MENSAGEM DE SUCESSO -->
+            <div id="successMessage" class="hidden py-6 text-center">
+              <i data-lucide="check-circle-2" class="mx-auto h-12 w-12 text-brand-gold"></i>
+              <h3 class="mt-4 text-2xl font-bold text-brand-slateTitle">Recebi seu projeto.</h3>
+              <p class="mx-auto mt-3 max-w-md font-medium leading-[1.7] text-brand-muted">Obrigado pelas informações. Vou analisar o que você me contou e entrar em contato para combinarmos os próximos passos.</p>
+              <a href="https://wa.me/5511933838030" target="_blank" class="mt-6 inline-flex items-center justify-center gap-2 rounded-xl border border-slate-300 px-6 py-3 text-sm font-bold text-brand-slateTitle hover:bg-slate-50 transition-colors">
+                <i data-lucide="message-circle" class="h-4 w-4 text-emerald-500"></i> Falar pelo WhatsApp
+              </a>
+            </div>
+
+            <form id="leadForm" class="space-y-4">
+              <div class="hidden"><input type="text" id="honeypot" tabindex="-1" autocomplete="off" /></div>
+
+              <fieldset class="space-y-2">
+                <legend class="text-sm font-bold text-brand-slateTitle">O projeto é para:</legend>
+                <div class="grid gap-2 sm:grid-cols-2 text-sm text-slate-600 font-medium">
+                  <label class="flex items-center gap-2 rounded-lg border border-slate-200 p-3 cursor-pointer hover:bg-slate-50">
+                    <input type="radio" name="projeto_tipo" value="igreja" onchange="atualizarObjetivos(this.value)" class="h-4 w-4 text-brand-gold border-slate-300 focus:ring-brand-gold" /> Minha igreja
+                  </label>
+                  <label class="flex items-center gap-2 rounded-lg border border-slate-200 p-3 cursor-pointer hover:bg-slate-50">
+                    <input type="radio" name="projeto_tipo" value="pessoal" onchange="atualizarObjetivos(this.value)" class="h-4 w-4 text-brand-gold border-slate-300 focus:ring-brand-gold" /> Para mim ou família
+                  </label>
+                </div>
+              </fieldset>
+
+              <div class="space-y-1.5 mt-2">
+                <label for="nome" class="block text-sm font-bold text-slate-700 mb-1">Nome</label>
+                <input type="text" id="nome" required class="flex h-10 w-full rounded-md border border-slate-300 bg-transparent px-3 py-2 text-base md:text-sm focus:outline-none focus:ring-2 focus:ring-brand-gold focus:ring-offset-2" />
+              </div>
+
+              <div class="grid gap-4 sm:grid-cols-2">
+                <div class="space-y-1.5">
+                  <label for="whatsapp" class="block text-sm font-bold text-slate-700 mb-1">WhatsApp</label>
+                  <input type="tel" id="whatsapp" required placeholder="(11) 90000-0000" class="flex h-10 w-full rounded-md border border-slate-300 bg-transparent px-3 py-2 text-base md:text-sm focus:outline-none focus:ring-2 focus:ring-brand-gold focus:ring-offset-2" />
+                </div>
+                <div class="space-y-1.5">
+                  <label for="email" class="block text-sm font-bold text-slate-700 mb-1">E-mail</label>
+                  <input type="email" id="email" required class="flex h-10 w-full rounded-md border border-slate-300 bg-transparent px-3 py-2 text-base md:text-sm focus:outline-none focus:ring-2 focus:ring-brand-gold focus:ring-offset-2" />
+                </div>
+              </div>
+
+              <div class="space-y-1.5">
+                <label for="objetivo" class="block text-sm font-bold text-slate-700 mb-1">O que você está buscando?</label>
+                <select id="objetivo" required class="flex h-10 w-full rounded-md border border-slate-300 bg-transparent px-3 py-2 text-base md:text-sm focus:outline-none focus:ring-2 focus:ring-brand-gold focus:ring-offset-2 text-slate-600 font-medium">
+                  <option value="" disabled selected>Escolha primeiro para quem é o projeto</option>
+                </select>
+              </div>
+
+              <fieldset class="space-y-2 mt-4">
+                <legend class="text-sm font-bold text-brand-slateTitle">Qual informação você já tem?</legend>
+                <div class="grid gap-2 sm:grid-cols-2 text-sm text-slate-600 font-bold">
+                  <div class="flex items-center gap-2 rounded-lg border border-slate-200 p-3">
+                    <input type="radio" id="modo-credito" name="modo" value="credito" checked class="h-4 w-4 border-slate-300 text-brand-gold focus:ring-brand-gold cursor-pointer" />
+                    <label for="modo-credito" class="cursor-pointer font-normal">Valor do crédito que procuro</label>
+                  </div>
+                  <div class="flex items-center gap-2 rounded-lg border border-slate-200 p-3">
+                    <input type="radio" id="modo-parcela" name="modo" value="parcela" class="h-4 w-4 border-slate-300 text-brand-gold focus:ring-brand-gold cursor-pointer" />
+                    <label for="modo-parcela" class="cursor-pointer font-normal">Valor que posso investir por mês</label>
+                  </div>
+                </div>
+                <input type="text" id="valor_info" placeholder="Ex: R$ 500.000 ou R$ 3.000/mês" class="mt-2 flex h-10 w-full rounded-md border border-slate-300 bg-transparent px-3 py-2 text-base md:text-sm focus:outline-none focus:ring-2 focus:ring-brand-gold focus:ring-offset-2" />
+              </fieldset>
+
+              <button type="submit" class="inline-flex items-center justify-center h-12 w-full rounded-xl bg-brand-gold text-brand-navy font-extrabold text-sm uppercase tracking-widest transition-transform duration-200 hover:-translate-y-0.5 hover:bg-brand-gold/90 mt-4 gap-2">
+                <i data-lucide="send" class="h-4 w-4"></i> Enviar meu projeto
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCRIPT -->
+  <script>
+    lucide.createIcons();
+
+    const objIgreja = ["Comprar sede ou imóvel", "Comprar terreno", "Construir", "Reformar ou ampliar", "Comprar veículos ou vans", "Outro projeto da igreja"];
+    const objPessoal = ["Comprar imóvel", "Comprar terreno", "Construir", "Gerar renda com imóveis", "Planejar patrimônio", "Comprar veículo", "Outro"];
+
+    function atualizarObjetivos(tipo) {
+      const select = document.getElementById('objetivo');
+      select.innerHTML = '<option value="" disabled selected>Selecione uma opção</option>';
+      let options = (tipo === 'igreja') ? objIgreja : objPessoal;
+      options.forEach(opt => {
+        const el = document.createElement('option'); el.value = opt; el.textContent = opt; select.appendChild(el);
+      });
+    }
+
+    function selecionarProjeto(tipo) {
+      const radio = document.querySelector(`input[name="projeto_tipo"][value="${tipo}"]`);
+      if (radio) { radio.checked = true; atualizarObjetivos(tipo); }
+    }
+
+    document.getElementById('whatsapp').addEventListener('input', function(e) {
+      let x = e.target.value.replace(/\D/g, '').match(/(\d{0,2})(\d{0,5})(\d{0,4})/);
+      e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
+    });
+
+    document.getElementById('leadForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      if (document.getElementById('honeypot').value) return;
+
+      const form = this;
+      const btn = form.querySelector('button[type="submit"]');
+      const originalBtnText = btn.innerHTML;
+      
+      btn.innerHTML = '<i data-lucide="loader-2" class="h-4 w-4 animate-spin"></i> Enviando...';
+      btn.disabled = true;
+      lucide.createIcons();
+
+      const projetoTipo = document.querySelector('input[name="projeto_tipo"]:checked')?.value || 'Não selecionado';
+      const nome = document.getElementById('nome').value;
+      const zap = document.getElementById('whatsapp').value;
+      const email = document.getElementById('email').value;
+      const objetivo = document.getElementById('objetivo').value;
+      
+      const tipoInfoCheck = document.querySelector('input[name="modo"]:checked');
+      const tipoInfo = tipoInfoCheck ? (tipoInfoCheck.value === 'credito' ? 'Crédito' : 'Parcela') : 'Info';
+      const valor = document.getElementById('valor_info') ? (document.getElementById('valor_info').value || 'Não informado') : 'Não informado';
+
+      // Envio via FormSubmit
+      fetch("https://formsubmit.co/ajax/contato@alexmartins.cc", {
+          method: "POST",
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify({
+              Para: projetoTipo,
+              Nome: nome,
+              WhatsApp: zap,
+              Email: email,
+              Objetivo: objetivo,
+              [tipoInfo]: valor,
+              _subject: `Novo Lead (Igrejas): ${nome}`
+          })
+      })
+      .then(response => response.json())
+      .then(data => {
+          form.classList.add('hidden');
+          document.getElementById('successMessage').classList.remove('hidden');
+          document.getElementById('successMessage').scrollIntoView({ behavior: 'smooth', block: 'center' });
+      })
+      .catch(error => {
+          alert("Ocorreu um erro no envio. Por favor, tente pelo WhatsApp.");
+          btn.innerHTML = originalBtnText;
+          btn.disabled = false;
+          lucide.createIcons();
+      });
+    });
+  </script>
+</body>
+</html>
