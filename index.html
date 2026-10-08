@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alex Martins | Planejamento Patrimonial com Consórcio</title>
+  <meta name="description" content="Ajudo pessoas, profissionais autônomos e empresários a usar o consórcio para conquistar imóveis, construir patrimônio e gerar renda para o futuro." />
+  
+  <link rel="icon" type="image/png" href="./logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'] },
+          colors: {
+            brand: { gold: '#C5A059', goldHover: '#B38E46', navy: '#041628', slateTitle: '#0F172A', muted: '#64748B', border: '#E2E8F0', bgLight: '#F3F6F8' }
+          },
+          boxShadow: { soft: '0 4px 20px -2px rgba(0, 0, 0, 0.05)', card: '0 8px 30px -4px rgba(0, 0, 0, 0.1)' }
+        }
+      }
+    }
+  </script>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>details summary::-webkit-details-marker { display:none; }</style>
+</head>
+<body class="bg-white text-slate-800 font-sans antialiased selection:bg-brand-gold selection:text-white">
+
+  <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold rounded-lg">
+        <img src="./logo.png" alt="Logotipo Alex Martins" class="h-10 w-auto object-contain" />
+        <div class="flex flex-col">
+          <span class="font-extrabold text-lg tracking-tight text-brand-slateTitle leading-none">Alex Martins</span>
+          <span class="text-[11px] text-brand-gold uppercase tracking-widest font-bold mt-1">Entender. Planejar. Conquistar.</span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
+        <a href="#portfolio" class="hover:text-brand-gold transition-colors">Objetivos</a>
+        <a href="#por-que-consorcio" class="hover:text-brand-gold transition-colors">Por que Consórcio</a>
+        <a href="#metodo" class="hover:text-brand-gold transition-colors">Como funciona</a>
+        <a href="#sobre" class="hover:text-brand-gold transition-colors">Sobre</a>
+        <a href="#faq" class="hover:text-brand-gold transition-colors">FAQ</a>
+      </nav>
+
+      <div>
+        <a href="#contato" class="inline-flex items-center justify-center px-5 py-2.5 rounded-xl text-sm font-bold text-brand-slateTitle border border-slate-300 hover:border-brand-gold hover:text-brand-gold transition-all">
+          Analisar meu projeto
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section id="hero" class="relative isolate scroll-mt-24 overflow-hidden bg-brand-navy pt-[42vh] pb-14 md:pt-32 md:pb-20 lg:flex lg:min-h-[85vh] lg:items-center">
+    <div class="absolute inset-0 z-[-20]">
+      <img src="./hero-image.png" alt="Alex Martins" class="absolute inset-0 h-full w-full object-cover object-[center_top] md:object-[center_right]" />
+    </div>
+
+    <span aria-hidden="true" class="absolute inset-0 z-[-10] bg-[linear-gradient(180deg,rgba(4,22,40,0.22)_0%,rgba(4,22,40,0.45)_24%,rgba(4,22,40,0.90)_38%,rgba(4,22,40,0.96)_60%,rgba(4,22,40,0.98)_100%)] md:bg-[linear-gradient(90deg,rgba(4,22,40,0.96)_0%,rgba(4,22,40,0.88)_35%,rgba(4,22,40,0.55)_55%,rgba(4,22,40,0.10)_82%)]"></span>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div class="max-w-[640px]">
+        <p class="text-[0.75rem] font-bold uppercase tracking-[0.15em] text-brand-gold">Planejamento Patrimonial</p>
+
+        <h1 class="mt-4 text-[2rem] leading-[1.1] font-extrabold text-white sm:text-[2.4rem] md:text-[2.75rem] lg:text-[3.125rem]">
+          Construa hoje seu patrimônio.
+          <br class="hidden sm:block" />
+          <span class="text-brand-gold">Gere renda para o futuro.</span>
+        </h1>
+
+        <p class="mt-5 max-w-[600px] text-base leading-[1.7] text-white/85 md:text-[1.125rem]">
+          Ajudo pessoas, profissionais autônomos e empresários a usar o consórcio para conquistar imóveis, construir patrimônio e gerar renda para ter mais independência financeira e segurança no futuro.
+        </p>
+
+        <div class="mt-7">
+          <a href="#contato" class="inline-flex w-full sm:w-auto items-center justify-center rounded-xl bg-brand-gold px-8 py-3.5 text-brand-navy font-extrabold transition-transform duration-200 hover:-translate-y-0.5 hover:bg-brand-gold/90 shadow-soft">
+            Quero analisar meu projeto
+          </a>
+        </div>
+
+        <div class="mt-7 max-w-[520px]">
+          <p class="text-sm font-semibold text-white/90">Em parceria com a Ademicon</p>
+          <p class="mt-1 text-xs leading-[1.6] text-white/65 md:text-[0.8125rem]">
+            Administradora autorizada pelo Banco Central do Brasil e associada à ABAC.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="dores" class="scroll-mt-20 bg-brand-bgLight py-12 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl text-center">
+        <p class="text-[0.75rem] font-bold uppercase tracking-[0.15em] text-brand-gold">Pare e pense</p>
+        <h2 class="mt-4 text-balance text-[1.5rem] font-extrabold leading-[1.22] text-brand-slateTitle md:text-[2.25rem] md:leading-[1.15]">
+          Você está construindo o futuro — ou apenas sustentando o presente?
+        </h2>
+        <p class="mt-4 text-balance text-base leading-[1.55] text-brand-muted md:text-[1.0625rem] md:leading-[1.6] font-medium">
+          A rotina exige muito. A renda entra, o negócio gira, a produção continua e novas responsabilidades aparecem. Mas, em algum momento, surge uma pergunta importante: quanto de todo esse esforço está realmente se transformando em patrimônio, renda e liberdade para o futuro?
+        </p>
+      </div>
+
+      <div class="mt-10 md:mt-14 max-w-5xl mx-auto">
+        <div class="grid gap-0 md:grid-cols-2 md:gap-x-10 md:gap-y-2">
+          <div class="h-full py-6 md:py-8">
+            <span class="grid h-10 w-10 place-items-center rounded-xl bg-slate-200/50">
+              <i data-lucide="wallet" class="h-5 w-5 fill-brand-gold/20 text-brand-gold"></i>
+            </span>
+            <h3 class="mt-4 text-lg font-extrabold leading-[1.3] tracking-tight text-brand-slateTitle md:text-xl">
+              O dinheiro entra. Mas quanto realmente fica?
+            </h3>
+            <p class="mt-2 text-base leading-[1.55] text-brand-muted font-medium">
+              Você trabalha, vende, produz, fatura — e ainda assim percebe que boa parte do resultado desaparece entre despesas, compromissos e novas necessidades. Os anos passam, mas o patrimônio nem sempre cresce na mesma proporção.
+            </p>
+          </div>
+          <div class="h-full py-6 md:py-8 border-t border-slate-300/60 md:border-t-0">
+            <span class="grid h-10 w-10 place-items-center rounded-xl bg-slate-200/50">
+              <i data-lucide="activity" class="h-5 w-5 fill-brand-gold/20 text-brand-gold"></i>
+            </span>
+            <h3 class="mt-4 text-lg font-extrabold leading-[1.3] tracking-tight text-brand-slateTitle md:text-xl">
+              Se você diminuir o ritmo, sua renda também diminui?
+            </h3>
+            <p class="mt-2 text-base leading-[1.55] text-brand-muted font-medium">
+              Para muita gente, a renda ainda depende diretamente da profissão, do negócio ou da produção. Enquanto tudo vai bem, isso parece natural. Mas construir patrimônio também significa criar alternativas para não depender para sempre apenas da própria capacidade de trabalhar.
+            </p>
+          </div>
+          <div class="h-full py-6 md:py-8 border-t border-slate-300/60">
+            <span class="grid h-10 w-10 place-items-center rounded-xl bg-slate-200/50">
+              <i data-lucide="calendar-clock" class="h-5 w-5 fill-brand-gold/20 text-brand-gold"></i>
+            </span>
+            <h3 class="mt-4 text-lg font-extrabold leading-[1.3] tracking-tight text-brand-slateTitle md:text-xl">
+              Quantas vezes um projeto importante já ficou para o ano que vem?
+            </h3>
+            <p class="mt-2 text-base leading-[1.55] text-brand-muted font-medium">
+              O imóvel, a construção, a expansão, aquele novo projeto ou investimento continuam nos planos — mas sempre aparece outra prioridade. Sem uma estratégia, sonhos importantes podem passar anos esperando o "momento ideal".
+            </p>
+          </div>
+          <div class="h-full py-6 md:py-8 border-t border-slate-300/60">
+            <span class="grid h-10 w-10 place-items-center rounded-xl bg-slate-200/50">
+              <i data-lucide="compass" class="h-5 w-5 fill-brand-gold/20 text-brand-gold"></i>
+            </span>
+            <h3 class="mt-4 text-lg font-extrabold leading-[1.3] tracking-tight text-brand-slateTitle md:text-xl">
+              Você está preparado para o momento em que suas prioridades mudarem?
+            </h3>
+            <p class="mt-2 text-base leading-[1.55] text-brand-muted font-medium">
+              Hoje o foco pode estar na carreira, na empresa, na família ou na produção. Amanhã, talvez você queira trabalhar menos, aproveitar mais o tempo, ajudar seus filhos ou simplesmente ter liberdade para escolher. O patrimônio que você constrói hoje pode ampliar essas escolhas no futuro.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-8 md:mt-12 mx-auto max-w-3xl border-t border-brand-gold/30 pt-8 md:pt-10">
+        <p class="text-center text-base font-semibold leading-[1.5] text-brand-slateTitle md:text-lg md:leading-[1.55]">
+          Trabalhar muito pode construir uma boa renda. Transformar essa renda em patrimônio exige decisão e planejamento.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="scroll-mt-24 bg-white py-12 md:py-20 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl text-center">
+        <p class="text-[0.75rem] font-bold uppercase tracking-[0.15em] text-brand-gold">Objetivos</p>
+        <h2 class="mt-4 text-3xl font-extrabold text-brand-slateTitle md:text-[2.5rem] md:leading-[1.15]">
+          Qual projeto você quer realizar?
+        </h2>
+        <p class="mt-3 leading-[1.7] text-brand-muted font-medium">
+          O consórcio pode fazer parte de diferentes estratégias. O primeiro passo é entender o que você deseja conquistar.
+        </p>
+      </div>
+
+      <div class="mt-8 grid gap-3 sm:grid-cols-2 md:gap-5 max-w-5xl mx-auto">
+        <a href="#contato" class="group block h-full rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold/60 focus-visible:ring-offset-2">
+          <div class="h-full overflow-hidden rounded-2xl border border-slate-200/70 bg-slate-50 transition-colors group-hover:border-brand-gold/40 group-hover:bg-slate-100">
+            <div class="flex h-full items-start gap-4 p-5 md:p-6">
+              <span class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-white">
+                <i data-lucide="home" class="h-6 w-6 fill-brand-gold/20 text-brand-gold"></i>
+              </span>
+              <div>
+                <h3 class="text-lg font-extrabold text-brand-slateTitle md:text-xl">Imóvel</h3>
+                <p class="mt-2 text-sm leading-[1.6] text-brand-muted font-medium">Comprar, construir, reformar, adquirir terrenos ou investir em imóveis.</p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="#contato" class="group block h-full rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold/60 focus-visible:ring-offset-2">
+          <div class="h-full overflow-hidden rounded-2xl border border-slate-200/70 bg-slate-50 transition-colors group-hover:border-brand-gold/40 group-hover:bg-slate-100">
+            <div class="flex h-full items-start gap-4 p-5 md:p-6">
+              <span class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-white">
+                <i data-lucide="car" class="h-6 w-6 fill-brand-gold/20 text-brand-gold"></i>
+              </span>
+              <div>
+                <h3 class="text-lg font-extrabold text-brand-slateTitle md:text-xl">Veículo</h3>
+                <p class="mt-2 text-sm leading-[1.6] text-brand-muted font-medium">Comprar ou trocar carros, motos, utilitários, caminhões ou estruturar uma frota.</p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="#contato" class="group block h-full rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold/60 focus-visible:ring-offset-2">
+          <div class="h-full overflow-hidden rounded-2xl border border-slate-200/70 bg-slate-50 transition-colors group-hover:border-brand-gold/40 group-hover:bg-slate-100">
+            <div class="flex h-full items-start gap-4 p-5 md:p-6">
+              <span class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-white">
+                <i data-lucide="line-chart" class="h-6 w-6 fill-brand-gold/20 text-brand-gold"></i>
+              </span>
+              <div>
+                <h3 class="text-lg font-extrabold text-brand-slateTitle md:text-xl">Investimento e Patrimônio</h3>
+                <p class="mt-2 text-sm leading-[1.6] text-brand-muted font-medium">Planejar novas aquisições, ampliar patrimônio ou construir fontes futuras de renda.</p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="#contato" class="group block h-full rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold/60 focus-visible:ring-offset-2">
+          <div class="h-full overflow-hidden rounded-2xl border border-slate-200/70 bg-slate-50 transition-colors group-hover:border-brand-gold/40 group-hover:bg-slate-100">
+            <div class="flex h-full items-start gap-4 p-5 md:p-6">
+              <span class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-white">
+                <i data-lucide="refresh-cw" class="h-6 w-6 fill-brand-gold/20 text-brand-gold"></i>
+              </span>
+              <div>
+                <h3 class="text-lg font-extrabold text-brand-slateTitle md:text-xl">Crédito para Novos Projetos</h3>
+                <p class="mt-2 text-sm leading-[1.6] text-brand-muted font-medium">Quitar financiamentos, estruturar novos projetos ou apoiar a expansão do negócio.</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="mt-6 md:mt-8 flex flex-col gap-5 border-y border-slate-200/70 py-6 md:flex-row md:items-center md:justify-between md:gap-10 md:py-7 max-w-5xl mx-auto">
+        <div class="max-w-2xl">
+          <h3 class="text-xl font-extrabold text-brand-slateTitle md:text-2xl">Cada projeto exige uma estratégia diferente.</h3>
+          <p class="mt-2 text-sm leading-[1.7] text-brand-muted md:text-base font-medium">
+            Analiso seu objetivo, prazo e capacidade financeira para estruturar uma proposta adequada à sua realidade.
+          </p>
+        </div>
+        <a href="#contato" class="inline-flex w-full shrink-0 items-center justify-center rounded-xl bg-brand-gold px-7 py-3 text-brand-navy font-bold hover:bg-brand-gold/90 md:w-auto transition-transform hover:-translate-y-0.5">
+          Quero analisar meu projeto
+        </a>
+      </div>
+
+      <div class="mt-8 md:mt-12 text-center max-w-5xl mx-auto">
+        <h3 class="text-lg font-extrabold tracking-tight text-brand-slateTitle md:text-xl">
+          Quem pode se beneficiar
+        </h3>
+        <div class="mt-5 grid grid-cols-2 gap-3 md:grid-cols-5 md:gap-4">
+          <a href="#contato" class="group flex h-full flex-col items-center gap-2 rounded-2xl px-2 py-4 transition-colors sm:px-3 hover:bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold/50">
+            <span class="grid h-10 w-10 place-items-center rounded-xl bg-slate-50">
+              <i data-lucide="users" class="h-5 w-5 fill-brand-gold/20 text-brand-gold transition-colors group-hover:fill-brand-gold/30"></i>
+            </span>
+            <span class="text-center text-xs font-semibold leading-tight text-brand-slateTitle sm:text-sm">Pessoas e Famílias</span>
+          </a>
+          <a href="#contato" class="group flex h-full flex-col items-center gap-2 rounded-2xl px-2 py-4 transition-colors sm:px-3 hover:bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold/50">
+            <span class="grid h-10 w-10 place-items-center rounded-xl bg-slate-50">
+              <i data-lucide="briefcase" class="h-5 w-5 fill-brand-gold/20 text-brand-gold transition-colors group-hover:fill-brand-gold/30"></i>
+            </span>
+            <span class="text-center text-xs font-semibold leading-tight text-brand-slateTitle sm:text-sm">Empreendedores</span>
+          </a>
+          <a href="#contato" class="group flex h-full flex-col items-center gap-2 rounded-2xl px-2 py-4 transition-colors sm:px-3 hover:bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold/50">
+            <span class="grid h-10 w-10 place-items-center rounded-xl bg-slate-50">
+              <i data-lucide="tractor" class="h-5 w-5 fill-brand-gold/20 text-brand-gold transition-colors group-hover:fill-brand-gold/30"></i>
+            </span>
+            <span class="text-center text-xs font-semibold leading-tight text-brand-slateTitle sm:text-sm">Agro</span>
+          </a>
+          <a href="saude/index.html" class="group flex h-full flex-col items-center gap-2 rounded-2xl px-2 py-4 transition-colors sm:px-3 bg-brand-gold/[0.03] ring-1 ring-brand-gold/20 hover:bg-brand-gold/[0.07] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold/50">
+            <span class="grid h-10 w-10 place-items-center rounded-xl bg-slate-50">
+              <i data-lucide="stethoscope" class="h-5 w-5 fill-brand-gold/20 text-brand-gold transition-colors group-hover:fill-brand-gold/30"></i>
+            </span>
+            <span class="text-center text-xs font-semibold leading-tight text-brand-slateTitle sm:text-sm">Profissionais da Saúde</span>
+            <span class="text-center text-xs font-medium text-brand-gold">Conteúdo especializado</span>
+            <span class="mt-1 text-center text-xs font-semibold text-brand-slateTitle transition-colors group-hover:text-brand-gold">Ver página para Saúde &rarr;</span>
+          </a>
+          <a href="igrejas/index.html" class="group flex h-full flex-col items-center gap-2 rounded-2xl px-2 py-4 transition-colors sm:px-3 bg-brand-gold/[0.03] ring-1 ring-brand-gold/20 hover:bg-brand-gold/[0.07] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold/50 col-span-2 justify-self-center md:col-span-1">
+            <span class="grid h-10 w-10 place-items-center rounded-xl bg-slate-50">
+              <i data-lucide="church" class="h-5 w-5 fill-brand-gold/20 text-brand-gold transition-colors group-hover:fill-brand-gold/30"></i>
+            </span>
+            <span class="text-center text-xs font-semibold leading-tight text-brand-slateTitle sm:text-sm">Igrejas e Organizações</span>
+            <span class="text-center text-xs font-medium text-brand-gold">Conteúdo especializado</span>
+            <span class="mt-1 text-center text-xs font-semibold text-brand-slateTitle transition-colors group-hover:text-brand-gold">Ver página para Igrejas &rarr;</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="por-que-consorcio" class="scroll-mt-24 bg-slate-50 py-12 md:py-20 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl text-center">
+        <p class="text-[0.75rem] font-bold uppercase tracking-[0.15em] text-brand-gold">Benefícios</p>
+        <h2 class="mt-4 text-3xl font-extrabold text-brand-slateTitle md:text-[2.5rem] md:leading-[1.15]">
+          Por que tantas pessoas estão escolhendo o consórcio?
+        </h2>
+        <p class="mx-auto mt-4 max-w-xl leading-[1.7] text-brand-muted font-medium">
+          Quando você compara custo, planejamento e liberdade de escolha, fica mais fácil entender as vantagens do consórcio.
+        </p>
+      </div>
+
+      <div class="mx-auto mt-8 max-w-4xl md:mt-10">
+        <div class="w-full divide-y divide-slate-200/70 rounded-3xl border border-slate-200/70 bg-white">
+          <details class="group px-4 md:px-6" open>
+            <summary class="flex w-full cursor-pointer items-start gap-3 py-5 text-left transition-colors md:gap-4 md:py-6 outline-none focus-visible:ring-2 focus-visible:ring-brand-gold rounded-t-3xl">
+              <span class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-slate-50">
+                <i data-lucide="coins" class="h-5 w-5 fill-brand-gold/20 text-brand-gold"></i>
+              </span>
+              <span class="min-w-0 flex-1">
+                <span class="block text-base font-extrabold tracking-tight text-brand-slateTitle md:text-lg">Menor custo</span>
+                <span class="mt-1 block text-sm font-medium leading-[1.6] text-brand-muted">Sem juros de financiamento e sem precisar comprometer seu capital com uma entrada para começar.</span>
+              </span>
+              <span class="grid h-9 w-9 shrink-0 place-items-center rounded-full border border-brand-gold/30 bg-brand-gold/10 text-brand-gold transition-colors group-hover:bg-brand-gold/20 group-open:bg-brand-gold group-open:text-brand-navy">
+                <i data-lucide="chevron-down" class="h-4 w-4 transition-transform duration-200 group-open:rotate-180"></i>
+              </span>
+            </summary>
+            
+            <div class="pb-6 pt-0 md:pl-14 text-sm leading-[1.7] text-brand-muted font-medium">
+              <p>Não pague juros exorbitantes aos bancos. Estruture a aquisição do imóvel ou patrimônio diluindo apenas a taxa de administração.</p>
+            </div>
+          </details>
+
+          <details class="group px-4 md:px-6">
+            <summary class="flex w-full cursor-pointer items-start gap-3 py-5 text-left transition-colors md:gap-4 md:py-6 outline-none focus-visible:ring-2 focus-visible:ring-brand-gold">
+              <span class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-slate-50">
+                <i data-lucide="calendar-days" class="h-5 w-5 fill-brand-gold/20 text-brand-gold"></i>
+              </span>
+              <span class="min-w-0 flex-1">
+                <span class="block text-base font-extrabold tracking-tight text-brand-slateTitle md:text-lg">Planejamento</span>
+                <span class="mt-1 block text-sm font-medium leading-[1.6] text-brand-muted">Quem começa antes tem mais tempo e mais opções para construir patrimônio.</span>
+              </span>
+              <span class="grid h-9 w-9 shrink-0 place-items-center rounded-full border border-brand-gold/30 bg-brand-gold/10 text-brand-gold transition-colors group-hover:bg-brand-gold/20 group-open:bg-brand-gold group-open:text-brand-navy">
+                <i data-lucide="chevron-down" class="h-4 w-4 transition-transform duration-200 group-open:rotate-180"></i>
+              </span>
+            </summary>
+            <div class="pb-6 pt-0 md:pl-14 text-sm font-medium leading-[1.7] text-brand-muted">
+              Quando você não precisa resolver tudo com urgência, pode organizar melhor as parcelas, preparar estratégias de lance e construir seu patrimônio ao longo do tempo.
+            </div>
+          </details>
+
+          <details class="group px-4 md:px-6">
+            <summary class="flex w-full cursor-pointer items-start gap-3 py-5 text-left transition-colors md:gap-4 md:py-6 outline-none focus-visible:ring-2 focus-visible:ring-brand-gold">
+              <span class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-slate-50">
+                <i data-lucide="handshake" class="h-5 w-5 fill-brand-gold/20 text-brand-gold"></i>
+              </span>
+              <span class="min-w-0 flex-1">
+                <span class="block text-base font-extrabold tracking-tight text-brand-slateTitle md:text-lg">Poder de compra</span>
+                <span class="mt-1 block text-sm font-medium leading-[1.6] text-brand-muted">Com a carta contemplada, você negocia com poder de compra à vista.</span>
+              </span>
+              <span class="grid h-9 w-9 shrink-0 place-items-center rounded-full border border-brand-gold/30 bg-brand-gold/10 text-brand-gold transition-colors group-hover:bg-brand-gold/20 group-open:bg-brand-gold group-open:text-brand-navy">
+                <i data-lucide="chevron-down" class="h-4 w-4 transition-transform duration-200 group-open:rotate-180"></i>
+              </span>
+            </summary>
+            <div class="pb-6 pt-0 md:pl-14 text-sm font-medium leading-[1.7] text-brand-muted">
+              Depois da contemplação e da liberação do crédito, você escolhe o bem e pode negociar a compra como comprador à vista, buscando melhores condições na negociação.
+            </div>
+          </details>
+
+          <details class="group px-4 md:px-6">
+            <summary class="flex w-full cursor-pointer items-start gap-3 py-5 text-left transition-colors md:gap-4 md:py-6 outline-none focus-visible:ring-2 focus-visible:ring-brand-gold rounded-b-3xl">
+              <span class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-slate-50">
+                <i data-lucide="arrow-left-right" class="h-5 w-5 fill-brand-gold/20 text-brand-gold"></i>
+              </span>
+              <span class="min-w-0 flex-1">
+                <span class="block text-base font-extrabold tracking-tight text-brand-slateTitle md:text-lg">Flexibilidade</span>
+                <span class="mt-1 block text-sm font-medium leading-[1.6] text-brand-muted">Seu crédito pode abrir diferentes possibilidades de acordo com o seu projeto.</span>
+              </span>
+              <span class="grid h-9 w-9 shrink-0 place-items-center rounded-full border border-brand-gold/30 bg-brand-gold/10 text-brand-gold transition-colors group-hover:bg-brand-gold/20 group-open:bg-brand-gold group-open:text-brand-navy">
+                <i data-lucide="chevron-down" class="h-4 w-4 transition-transform duration-200 group-open:rotate-180"></i>
+              </span>
+            </summary>
+            <div class="pb-6 pt-0 md:pl-14 text-sm font-medium leading-[1.7] text-brand-muted">
+              Conforme as regras da modalidade, você pode comprar mais de um imóvel com a mesma carta, manter o crédito aplicado enquanto decide ou até transferir a cota contemplada.
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="metodo" class="scroll-mt-24 bg-brand-navy py-10 text-white md:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl text-center">
+        <p class="text-[0.75rem] font-bold uppercase tracking-[0.15em] text-brand-gold">Método MAPA</p>
+        <h2 class="mt-4 text-3xl font-extrabold md:text-[2.5rem] md:leading-[1.15]">
+          Cada projeto precisa de um plano
+        </h2>
+        <p class="mx-auto mt-4 max-w-xl font-medium leading-[1.7] text-white/80">
+          Antes de falar em valores ou parcelas, eu procuro entender o que você quer conquistar, seu momento e seus objetivos. A partir daí, usamos o Método MAPA para estruturar o caminho.
+        </p>
+      </div>
+
+      <div class="relative mt-8 lg:mt-10 max-w-5xl mx-auto">
+        <div class="absolute left-[1.375rem] top-5 bottom-5 w-px bg-white/20 lg:left-0 lg:right-0 lg:top-10 lg:bottom-auto lg:h-px lg:w-auto"></div>
+        <div class="relative space-y-7 lg:grid lg:grid-cols-4 lg:gap-6 lg:space-y-0">
+          <div class="relative pl-12 lg:pl-0 lg:text-center">
+            <div aria-hidden="true" class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center bg-brand-navy lg:static lg:mx-auto lg:h-20 lg:w-auto">
+              <span class="font-sans text-3xl font-extrabold text-brand-gold lg:bg-brand-navy lg:px-2 lg:text-6xl">M</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-brand-gold lg:mt-3"><strong class="font-extrabold">M</strong>apear</h3>
+              <p class="mt-1 text-sm font-medium leading-relaxed text-white/90">Entender onde você está e o que quer conquistar.</p>
+            </div>
+          </div>
+          <div class="relative pl-12 lg:pl-0 lg:text-center">
+            <div aria-hidden="true" class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center bg-brand-navy lg:static lg:mx-auto lg:h-20 lg:w-auto">
+              <span class="font-sans text-3xl font-extrabold text-brand-gold lg:bg-brand-navy lg:px-2 lg:text-6xl">A</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-brand-gold lg:mt-3"><strong class="font-extrabold">A</strong>nalisar opções</h3>
+              <p class="mt-1 text-sm font-medium leading-relaxed text-white/90">Avaliar os caminhos possíveis para o seu projeto.</p>
+            </div>
+          </div>
+          <div class="relative pl-12 lg:pl-0 lg:text-center">
+            <div aria-hidden="true" class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center bg-brand-navy lg:static lg:mx-auto lg:h-20 lg:w-auto">
+              <span class="font-sans text-3xl font-extrabold text-brand-gold lg:bg-brand-navy lg:px-2 lg:text-6xl">P</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-brand-gold lg:mt-3"><strong class="font-extrabold">P</strong>lanejar a estratégia</h3>
+              <p class="mt-1 text-sm font-medium leading-relaxed text-white/90">Transformar as opções em um plano.</p>
+            </div>
+          </div>
+          <div class="relative pl-12 lg:pl-0 lg:text-center">
+            <div aria-hidden="true" class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center bg-brand-navy lg:static lg:mx-auto lg:h-20 lg:w-auto">
+              <span class="font-sans text-3xl font-extrabold text-brand-gold lg:bg-brand-navy lg:px-2 lg:text-6xl">A</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-brand-gold lg:mt-3"><strong class="font-extrabold">A</strong>companhar a jornada</h3>
+              <p class="mt-1 text-sm font-medium leading-relaxed text-white/90">Estar ao seu lado durante o caminho.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="py-20 lg:py-24 bg-white border-y border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <div class="lg:col-span-5 w-full">
+          <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-lg bg-slate-50">
+            <img src="./alex-sobre.jpg" alt="Alex Martins" class="w-full h-auto object-cover" />
+          </div>
+        </div>
+        <div class="lg:col-span-7">
+          <p class="text-[0.75rem] font-bold uppercase tracking-[0.15em] text-brand-gold">Sobre mim</p>
+          <h2 class="mt-3 text-3xl sm:text-4xl font-extrabold text-brand-slateTitle tracking-tight">Como posso te ajudar</h2>
+          <div class="mt-5 space-y-4 text-base font-medium text-brand-muted leading-relaxed">
+            <p>Meu trabalho começa entendendo o que você quer conquistar. Antes de apresentar uma proposta, procuro conhecer seus objetivos, tirar suas dúvidas e explorar diferentes caminhos para construir um projeto alinhado à sua realidade.</p>
+            <p>Tenho mais de 20 anos de experiência na área de negócios e um perfil didático, organizado e investigativo. Uso essa experiência para analisar cenários, comparar possibilidades e ajudar você a tomar decisões com mais clareza.</p>
+          </div>
+
+          <h3 class="mt-8 font-extrabold text-lg text-brand-slateTitle">Um atendimento que continua depois da contratação</h3>
+          <div class="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="p-5 rounded-xl bg-slate-50 border border-slate-200 shadow-sm">
+              <h4 class="font-bold text-sm text-brand-slateTitle">Atendimento direto e humanizado</h4>
+              <p class="mt-1 text-xs font-medium text-brand-muted leading-relaxed">Você fala comigo, não com robôs ou menus intermináveis.</p>
+            </div>
+            <div class="p-5 rounded-xl bg-slate-50 border border-slate-200 shadow-sm">
+              <h4 class="font-bold text-sm text-brand-slateTitle">Acompanhamento da sua carteira</h4>
+              <p class="mt-1 text-xs font-medium text-brand-muted leading-relaxed">Informação e suporte ao longo de todo o plano.</p>
+            </div>
+          </div>
+          <div class="mt-8 pt-6 border-t border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div>
+              <p class="text-sm font-bold text-brand-slateTitle">Especialista e Consultor Autorizado Ademicon</p>
+              <p class="text-xs text-brand-muted font-medium mt-1">Minha credencial pode ser verificada diretamente no site oficial.</p>
+            </div>
+            <a href="https://www.ademicon.com.br/licensed/984100/alexsandro-martins" target="_blank" rel="noopener noreferrer" class="text-sm font-bold text-brand-gold hover:underline whitespace-nowrap">
+              Ver autorização &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="scroll-mt-24 bg-white py-12 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid gap-8 lg:grid-cols-[0.75fr_1.25fr] lg:gap-14">
+        <div class="lg:sticky lg:top-28 self-start">
+          <p class="text-[0.75rem] font-bold uppercase tracking-[0.15em] text-brand-gold">FAQ</p>
+          <h2 class="mt-5 text-3xl font-extrabold text-brand-slateTitle md:text-[2.5rem] md:leading-[1.15]">Dúvidas frequentes</h2>
+        </div>
+
+        <div class="space-y-8">
+          <div class="w-full space-y-3">
+            <details class="group rounded-2xl border border-slate-200/70 bg-white shadow-soft transition-all duration-200 hover:border-brand-gold/40 hover:shadow-card">
+              <summary class="flex cursor-pointer items-center justify-between gap-4 rounded-2xl px-5 py-5 text-left text-base font-semibold leading-snug text-brand-slateTitle md:px-6 md:py-6 outline-none focus-visible:ring-2 focus-visible:ring-brand-gold/60">
+                O consórcio é seguro?
+                <span class="relative flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-brand-gold/30 bg-brand-gold/10 text-brand-gold transition-colors duration-200 group-hover:bg-brand-gold/20 group-open:bg-brand-gold group-open:text-brand-navy">
+                  <i data-lucide="plus" class="h-4 w-4 group-open:hidden"></i><i data-lucide="minus" class="hidden h-4 w-4 group-open:block"></i>
+                </span>
+              </summary>
+              <div class="px-5 pb-5 pt-0 md:px-6 md:pb-6 text-sm font-medium text-brand-muted leading-[1.8]">
+                <p>Sim. O sistema de consórcios é regulamentado e fiscalizado pelo Banco Central do Brasil. Você conta com a estrutura da Ademicon e minha autorização oficial.</p>
+              </div>
+            </details>
+
+            <details class="group rounded-2xl border border-slate-200/70 bg-white shadow-soft transition-all duration-200 hover:border-brand-gold/40 hover:shadow-card">
+              <summary class="flex cursor-pointer items-center justify-between gap-4 rounded-2xl px-5 py-5 text-left text-base font-semibold leading-snug text-brand-slateTitle md:px-6 md:py-6 outline-none focus-visible:ring-2 focus-visible:ring-brand-gold/60">
+                Preciso dar entrada para fazer um consórcio?
+                <span class="relative flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-brand-gold/30 bg-brand-gold/10 text-brand-gold transition-colors duration-200 group-hover:bg-brand-gold/20 group-open:bg-brand-gold group-open:text-brand-navy">
+                  <i data-lucide="plus" class="h-4 w-4 group-open:hidden"></i><i data-lucide="minus" class="hidden h-4 w-4 group-open:block"></i>
+                </span>
+              </summary>
+              <div class="px-5 pb-5 pt-0 md:px-6 md:pb-6 text-sm font-medium text-brand-muted leading-[1.8]">
+                <p>Não. Você pode começar seu plano sem entrada. Se já possui algum capital disponível, podemos utilizá-lo posteriormente dentro de uma estratégia de lance.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL (FormSubmit Otimizado) -->
+  <section id="contato" class="scroll-mt-24 bg-white py-12 md:py-20 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="relative overflow-hidden rounded-[2rem] bg-brand-navy px-5 py-10 md:px-12 md:py-14">
+        
+        <div aria-hidden="true" class="pointer-events-none absolute -top-24 left-1/2 h-64 w-64 -translate-x-1/2 rounded-full bg-brand-gold/10 blur-3xl"></div>
+        
+        <div class="relative grid gap-8 lg:grid-cols-[42fr_58fr] lg:items-start lg:gap-12">
+          
+          <div>
+            <h2 class="text-3xl font-extrabold text-white md:text-[2.25rem] md:leading-[1.15]">
+              Vamos analisar seu projeto?
+            </h2>
+            <p class="mt-4 leading-[1.7] font-medium text-white/70">
+              Em uma conversa de aproximadamente 30 minutos, vou entender seu objetivo e avaliar, junto com você, quais possibilidades fazem mais sentido para o seu momento.
+            </p>
+            <ol class="mt-6 space-y-3">
+              <li class="flex items-start gap-3 text-sm leading-[1.6] text-white/80">
+                <span class="grid h-6 w-6 shrink-0 place-items-center rounded-full bg-brand-gold text-xs font-bold text-brand-navy">1</span> Entender seu objetivo
+              </li>
+              <li class="flex items-start gap-3 text-sm leading-[1.6] text-white/80">
+                <span class="grid h-6 w-6 shrink-0 place-items-center rounded-full bg-brand-gold text-xs font-bold text-brand-navy">2</span> Avaliar prazo e capacidade
+              </li>
+              <li class="flex items-start gap-3 text-sm leading-[1.6] text-white/80">
+                <span class="grid h-6 w-6 shrink-0 place-items-center rounded-full bg-brand-gold text-xs font-bold text-brand-navy">3</span> Analisar as possibilidades
+              </li>
+            </ol>
+            <div class="mt-7 border-t border-white/15 pt-5">
+              <h3 class="text-sm font-semibold text-brand-gold">Como posso falar com você?</h3>
+              <div class="mt-3 flex flex-col gap-2 text-sm text-white/70">
+                <a href="mailto:contato@alexmartins.cc" class="inline-flex w-fit items-center gap-2 hover:text-white"><i data-lucide="mail" class="h-4 w-4 text-brand-gold"></i> contato@alexmartins.cc</a>
+                <span class="inline-flex w-fit items-center gap-2"><i data-lucide="message-circle" class="h-4 w-4 text-brand-gold"></i> +55 (11) 93383-8030</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-2xl bg-white p-5 md:p-7 shadow-xl border border-slate-100">
+            <!-- MENSAGEM DE SUCESSO -->
+            <div id="successMessage" class="hidden py-6 text-center">
+              <i data-lucide="check-circle-2" class="mx-auto h-12 w-12 text-brand-gold"></i>
+              <h3 class="mt-4 text-2xl font-bold text-brand-slateTitle">Recebi seu projeto.</h3>
+              <p class="mx-auto mt-3 max-w-md font-medium leading-[1.7] text-brand-muted">Obrigado pelas informações. Vou analisar o que você me contou e entrar em contato para combinarmos os próximos passos.</p>
+              <a href="https://wa.me/5511933838030" target="_blank" class="mt-6 inline-flex items-center justify-center gap-2 rounded-xl border border-slate-300 px-6 py-3 text-sm font-bold text-brand-slateTitle hover:bg-slate-50 transition-colors">
+                <i data-lucide="message-circle" class="h-4 w-4 text-emerald-500"></i> Falar pelo WhatsApp
+              </a>
+            </div>
+
+            <form id="leadForm" class="space-y-4">
+              <div class="hidden"><input type="text" id="honeypot" tabindex="-1" autocomplete="off" /></div>
+
+              <div class="space-y-1.5">
+                <label for="nome" class="block text-sm font-bold text-slate-700 mb-1">Nome</label>
+                <input type="text" id="nome" required class="flex h-10 w-full rounded-md border border-slate-300 bg-transparent px-3 py-2 text-base md:text-sm focus:outline-none focus:ring-2 focus:ring-brand-gold focus:ring-offset-2" />
+              </div>
+
+              <div class="grid gap-4 sm:grid-cols-2">
+                <div class="space-y-1.5">
+                  <label for="whatsapp" class="block text-sm font-bold text-slate-700 mb-1">WhatsApp</label>
+                  <input type="tel" id="whatsapp" required placeholder="(11) 90000-0000" class="flex h-10 w-full rounded-md border border-slate-300 bg-transparent px-3 py-2 text-base md:text-sm focus:outline-none focus:ring-2 focus:ring-brand-gold focus:ring-offset-2" />
+                </div>
+                <div class="space-y-1.5">
+                  <label for="email" class="block text-sm font-bold text-slate-700 mb-1">E-mail</label>
+                  <input type="email" id="email" required class="flex h-10 w-full rounded-md border border-slate-300 bg-transparent px-3 py-2 text-base md:text-sm focus:outline-none focus:ring-2 focus:ring-brand-gold focus:ring-offset-2" />
+                </div>
+              </div>
+
+              <div class="space-y-1.5">
+                <label for="objetivo" class="block text-sm font-bold text-slate-700 mb-1">O que você está buscando?</label>
+                <select id="objetivo" required class="flex h-10 w-full rounded-md border border-slate-300 bg-transparent px-3 py-2 text-base md:text-sm focus:outline-none focus:ring-2 focus:ring-brand-gold focus:ring-offset-2 text-slate-600 font-medium">
+                  <option value="" disabled selected>Selecione uma opção</option>
+                  <option value="Comprar imóvel ou terreno">Comprar imóvel ou terreno</option>
+                  <option value="Construir ou reformar">Construir ou reformar</option>
+                  <option value="Quitar financiamento imobiliário">Quitar financiamento imobiliário</option>
+                  <option value="Gerar renda com imóveis">Gerar renda com imóveis</option>
+                  <option value="Comprar veículo ou utilitário">Comprar veículo ou utilitário</option>
+                  <option value="Projeto empresarial ou agro">Projeto empresarial ou agro</option>
+                  <option value="Outro">Outro</option>
+                </select>
+              </div>
+
+              <fieldset class="space-y-2 mt-4">
+                <legend class="text-sm font-bold text-brand-slateTitle">Qual informação você já tem?</legend>
+                <div class="grid gap-2 sm:grid-cols-2 text-sm text-slate-600 font-bold">
+                  <div class="flex items-center gap-2 rounded-lg border border-slate-200 p-3">
+                    <input type="radio" id="modo-credito" name="modo" value="credito" checked class="h-4 w-4 border-slate-300 text-brand-gold focus:ring-brand-gold cursor-pointer" />
+                    <label for="modo-credito" class="cursor-pointer font-normal">Valor do crédito que procuro</label>
+                  </div>
+                  <div class="flex items-center gap-2 rounded-lg border border-slate-200 p-3">
+                    <input type="radio" id="modo-parcela" name="modo" value="parcela" class="h-4 w-4 border-slate-300 text-brand-gold focus:ring-brand-gold cursor-pointer" />
+                    <label for="modo-parcela" class="cursor-pointer font-normal">Valor que posso investir por mês</label>
+                  </div>
+                </div>
+                <input type="text" id="valor_info" placeholder="Ex: R$ 500.000 ou R$ 3.000/mês" class="mt-2 flex h-10 w-full rounded-md border border-slate-300 bg-transparent px-3 py-2 text-base md:text-sm focus:outline-none focus:ring-2 focus:ring-brand-gold focus:ring-offset-2" />
+              </fieldset>
+
+              <button type="submit" class="inline-flex items-center justify-center h-12 w-full rounded-xl bg-brand-gold text-brand-navy font-extrabold text-sm uppercase tracking-widest transition-transform duration-200 hover:-translate-y-0.5 hover:bg-brand-gold/90 mt-4 gap-2">
+                <i data-lucide="send" class="h-4 w-4"></i> Quero analisar meu projeto
+              </button>
+
+              <p class="text-xs font-medium leading-[1.6] text-brand-muted text-center mt-3">
+                Ao enviar, você concorda que eu utilize essas informações para entrar em contato.
+              </p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-brand-bgLight py-8 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <img src="./logo.png" alt="Alex Martins Logo" class="h-8 w-auto object-contain" />
+        <div>
+          <p class="text-sm font-bold text-brand-slateTitle">Alex Martins Consultoria Patrimonial</p>
+          <p class="text-xs font-medium text-brand-muted">Especialista em Planejamento Patrimonial. Consultor Autorizado Ademicon.</p>
+        </div>
+      </div>
+      <div class="text-center sm:text-right text-xs font-medium text-slate-400">
+        <p>&copy; 2026 Alex Martins. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5511933838030" target="_blank" class="fixed bottom-8 right-6 md:bottom-6 md:right-6 z-50 p-4 rounded-full bg-emerald-600 text-white shadow-card hover:bg-emerald-500 transition-all flex items-center justify-center">
+    <i data-lucide="message-circle" class="h-6 w-6"></i>
+  </a>
+
+  <!-- SCRIPT BASE (FormSubmit Otimizado) -->
+  <script>
+    lucide.createIcons();
+
+    document.getElementById('whatsapp').addEventListener('input', function(e) {
+      let x = e.target.value.replace(/\D/g, '').match(/(\d{0,2})(\d{0,5})(\d{0,4})/);
+      e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
+    });
+
+    document.getElementById('leadForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      if (document.getElementById('honeypot').value) return;
+
+      const form = this;
+      const btn = form.querySelector('button[type="submit"]');
+      const originalBtnText = btn.innerHTML;
+      
+      btn.innerHTML = '<i data-lucide="loader-2" class="h-4 w-4 animate-spin"></i> Enviando...';
+      btn.disabled = true;
+      lucide.createIcons();
+
+      const nome = document.getElementById('nome').value;
+      const zap = document.getElementById('whatsapp').value;
+      const email = document.getElementById('email').value || 'Não informado';
+      const objetivo = document.getElementById('objetivo').value;
+      
+      const tipoInfoCheck = document.querySelector('input[name="modo"]:checked');
+      const tipoInfo = tipoInfoCheck ? (tipoInfoCheck.value === 'credito' ? 'Crédito' : 'Parcela') : 'Info';
+      const valor = document.getElementById('valor_info') ? (document.getElementById('valor_info').value || 'Não informado') : 'Não informado';
+
+      // O FormSubmit processa o envio direto para o seu e-mail sem precisar de backend!
+      fetch("https://formsubmit.co/ajax/contato@alexmartins.cc", {
+          method: "POST",
+          headers: { 
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+          },
+          body: JSON.stringify({
+              Nome: nome,
+              WhatsApp: zap,
+              Email: email,
+              Objetivo: objetivo,
+              [tipoInfo]: valor,
+              _subject: `Novo Lead (Página Principal): ${nome}`
+          })
+      })
+      .then(response => response.json())
+      .then(data => {
+          form.classList.add('hidden');
+          document.getElementById('successMessage').classList.remove('hidden');
+          document.getElementById('successMessage').scrollIntoView({ behavior: 'smooth', block: 'center' });
+      })
+      .catch(error => {
+          alert("Ocorreu um erro no envio. Por favor, clique no botão para tentar pelo WhatsApp.");
+          btn.innerHTML = originalBtnText;
+          btn.disabled = false;
+          lucide.createIcons();
+      });
+    });
+  </script>
+</body>
+</html>
